@@ -1,0 +1,77 @@
+.idk{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center; 
+
+}
+.esp32{
+    max-width:350px;
+    border: 5px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    backdrop-filter: blur(5);
+}
+
+.motod{
+    max-width:350px;
+    border: 5px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    backdrop-filter: blur(5);
+}
+
+.dcm{
+    max-width:350px;
+    border: 5px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    backdrop-filter: blur(5);
+}
+
+.dcm {
+    display: inline-block; 
+    transition: transform 0.4s ease-in-out; 
+}
+
+.dcm:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.motod{
+    display: inline-block; 
+    transition: transform 0.4s ease-in-out; 
+}
+.motod:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.esp32{
+    display: inline-block; 
+    transition: transform 0.4s ease-in-out; 
+}
+.esp32:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+body{
+    background-image: url('maybe.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
