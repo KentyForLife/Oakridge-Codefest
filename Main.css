@@ -1,33 +1,8 @@
-body{
-    background-color: aqua;
-    background-image: url(green-leaves-background.jpg);
-    
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-.centre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-}
-.title{
-    font-size:xx-large;
-    justify-content: center;
-    align-items: center;
-    color: #c4f3bf;
-    letter-spacing: 2px;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    position:absolute;
-}
-.oval{
-    height: 300px;
-    width: 800px;
-    border-radius: 50%;
-    background-color: black;
-    border:3px solid white
-    
-}
+
 .header {
     display: flex;
     align-items: center;
@@ -61,23 +36,35 @@ body{
     font-weight: 100;
     font-size: 17px;
     letter-spacing: 1px;
+    
 }
 
 .menu-item:hover {
     color: #555;
+    cursor: pointer;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 100%; 
     left: 0;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
     min-width: 150px;
-    z-index: 10;
+    
     border: 1px solid #ddd;
+}
+.dropdown-content:hover {
+    color: #555;
+    cursor: pointer;
+}
+#Investing {
+    left: 80px;
+}
+#Simulator {
+    left: 20px;
 }
 .dropdown-content a {
     display: block;
@@ -93,5 +80,9 @@ body{
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; 
+}
+.text{
+    font-family:'Times New Roman';
+    font-size: 21px;
 }

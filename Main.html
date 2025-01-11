@@ -3,41 +3,218 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crop Scanner</title>
+    <title>Dropdown Menu</title>
     <link rel="stylesheet" href="Main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body>
+  <body style="background-color: rgb(245, 242, 242)">
     <header class="header">
-        <div class="logo-section" style="padding-top: 1.5px;padding-bottom: 1.5px;">
-            <img src="leaf.png" style="width: 27px;padding-left: 150px;" alt="Logo" class="logo">
-            <span class="site-name" style="-webkit-text-stroke-width: 0.3px;font-size: 26px;">Agriculture</span>
-        </div>
-        <nav class="nav-menu">
-            <div class="dropdown">
-                <a href="" class="menu-item" style="padding-left: 100px;font-weight: 200px;font-weight: 520;">About</a>
-                <div class="dropdown-content" id="Investing">
-                    <a href="">Creators</a>
-                    <a href="">Contacts</a>
-                    <a href="">The Program</a>
-                </div>
-            </div>
-            <div class="dropdown" >
-                <a href="" class="menu-item" style="padding-left: 30px;color: black;">Login</a>
-            </div>
-        </nav>
-    </header>
-    <div class="centre">
-        <div class="oval">
-        </div>
-      <div class="title">
-        <h1><a href="" style="color: white;text-decoration: none;">CROP DISEASE DETECTOR</a></h1>
+      <div
+        class="logo-section"
+        style="padding-top: 1.5px; padding-bottom: 1.5px"
+      >
+        <img
+          src="fermento.jpeg"
+          style="width: 27px; padding-left: 100px"
+          alt="Logo"
+          class="logo"
+        />
+        <span
+          class="site-name"
+          style="-webkit-text-stroke-width: 0.3px; font-size: 26px"
+          >Fermento</span
+        >
       </div>
+      <nav class="nav-menu">
+        <div class="dropdown">
+          <a
+            class="menu-item"
+            style="
+              padding-left: 100px;
+              font-weight: 200px;
+              font-weight: 520;
+              font-size: medium;
+            "
+            >About</a
+          >
+          <div class="dropdown-content" id="Investing">
+            <a onclick="Main()">Main Idea</a>
+            <a onclick="Main2()">Problems</a>
+            <a onclick="Main3()">Solutions</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a
+            href="model.html"
+            class="menu-item"
+            style="padding-left: 100px; color: black; font-size: medium"
+            >Pricing</a
+          >
+          <div
+            class="dropdown-content"
+            id="Simulator"
+            style="margin-left: 70px"
+          >
+            <a href="model.html">Model</a>
+            <a>Parts</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a
+            class="menu-item"
+            style="
+              padding-left: 100px;
+              color: black;
+              font-size: medium;
+              font-size: medium;
+            "
+            >Help</a
+          >
+          <div
+            class="dropdown-content"
+            id="Simulator"
+            style="margin-left: 60px"
+          >
+            <a>Gmail</a>
+            <a>Contact Us</a>
+          </div>
+        </div>
+        <div class="dropdown" style="margin-left: 400px">
+          <a
+            class="menu-item"
+            style="padding-left: 30px; color: black; font-size: medium"
+            >Sign Up</a
+          >
+          <a
+            class="menu-item"
+            style="padding-left: 60px; color: black; font-size: medium"
+            href="Login.html"
+            >Login</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+      "
+    >
+      <div style="margin-left: 130px">
+        <h1
+          style="
+            font-size: 75px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+          "
+        >
+          The Main Idea
+        </h1>
+        <div class="text">
+          <p style="max-width: 400px; margin-left: 10px; margin-top: 60px">
+            Fermento is a site regarding a problem to help farmers and workers
+            in agriculture. It uses a bot to detect if any plants are diseased
+            and reports which plots have diseased plants.
+          </p>
+          <p style="max-width: 400px; margin-left: 10px; margin-top: 60px">
+            The size of the plot of agriculture is entered into the website,
+            while it is displayed onto the site and indicated
+          </p>
+        </div>
+        <h1
+          style="
+            font-size: 75px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+          "
+        >
+          Problems
+        </h1>
+        <div class="text">
+          <p style="max-width: 400px; margin-left: 10px; margin-top: 60px">
+            Agriculture is the backbone of many economies, but it faces several
+            challenges that hinder productivity and sustainability. A key issue
+            is plant diseases, which can spread rapidly if not detected early,
+            causing significant crop losses. Farmers often lack access to
+            advanced tools or expertise to identify diseases promptly.
+          </p>
+          <p style="max-width: 400px; margin-left: 10px; margin-top: 60px">
+            Additionally, poor communication and record-keeping make it
+            difficult to pinpoint affected areas, leading to delays in
+            implementing solutions.
+          </p>
+          <p style="max-width: 400px; margin-left: 10px; margin-top: 60px">
+            The lack of timely intervention exacerbates financial losses for
+            farmers and reduces the availability of quality produce in the
+            market. With agriculture becoming increasingly vulnerable due to
+            climate change, these problems are further amplified, impacting both
+            livelihoods and food security.
+          </p>
+        </div>
+        <div class="text">
+          <h1
+            style="
+              font-size: 75px;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+              font-weight: 100;
+              margin-bottom: 10px;
+            "
+          >
+            Solutions
+          </h1>
+          <p style="max-width: 400px; margin-left: 10px; margin-top: 60px">
+            Fermento addresses these challenges by integrating technology to
+            empower farmers and agricultural workers. Its disease detection bot
+            uses advanced imaging and AI to identify diseased plants quickly and
+            accurately, ensuring early intervention.
+          </p>
+        </div>
+        <div class="text">
+          <p style="max-width: 400px; margin-left: 10px; margin-top: 60px">
+            The system maps the affected plots, providing farmers with precise
+            information on where to take action.
+          </p>
+          <p style="max-width: 400px; margin-left: 10px; margin-top: 60px">
+            By streamlining disease detection and reporting, Fermento minimizes
+            crop losses and saves farmers valuable time and resources. This
+            innovative approach not only improves productivity but also helps
+            build a more resilient agricultural sector, promoting sustainable
+            practices and enhancing food security for the future.
+          </p>
+        </div>
+      </div>
+      <img
+        src="leaves.jpeg"
+        style="max-width: 700px; height: 2000px; margin-right: 0px"
+      />
     </div>
+
+    <script>
+      function Main() {
+        window.scrollBy({
+          top: 120,
+          behavior: "smooth",
+        });
+      }
+      function Main2() {
+        window.scrollBy({
+          top: 500,
+          behavior: "smooth",
+        });
+      }
+      function Main3() {
+        window.scrollBy({
+          top: 1300,
+          behavior: "smooth",
+        });
+      }
+    </script>
   </body>
 </html>
