@@ -1,0 +1,21 @@
+body{
+    background-color: aqua;
+    background-image: linear-gradient(to right,rgb(133, 217, 107),rgb(235, 235, 129));
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+}
+.title{
+    font-size:xx-large;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
