@@ -82,6 +82,20 @@ body {
 .dropdown:hover .dropdown-content {
     display: block; 
 }
+#ha{
+    display:none;
+    
+}
+#gmail:hover ~ #ha {
+    display:block;
+}
+#ah{
+    display:none;
+    
+}
+#Contact:hover ~ #ah {
+    display:block;
+}
 .text{
     font-family:'Times New Roman';
     font-size: 21px;
