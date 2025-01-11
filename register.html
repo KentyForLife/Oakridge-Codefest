@@ -18,7 +18,7 @@
                 <i class="material-icons" id="person">person</i>
                 <input type="text" id="username" placeholder="Username">
                 <i class="material-icons" id="mail">mail</i>
-                <input type="email" id="username" placeholder="Email">
+                <input type="email" id="email" placeholder="Email">
                 <i class="material-icons" id="lock">lock</i>
                 <input type="password" id="password" placeholder="Password">
                 <i class="material-icons" id="lock">lock</i>
@@ -37,22 +37,21 @@
             let username = document.getElementById("username").value.trim();
             let password = document.getElementById("password").value.trim();
             let confpass = document.getElementById("conpassword").value.trim();
-            let email = document.getElementById("mail").value.trim();
+            let email = document.getElementById("email").value.trim();  // Changed here
     
-            if (username === '' || password === '' || confpass === '' || email==='') {
+            if (username === '' || password === '' || confpass === '' || email === '') {
                 alert('All fields are required.');
                 return;
             }
     
             if (password === confpass) {
-                console.log('Login successful!');
-                alert('Login successful!');
+                console.log('Sign up successful!');
+                alert('Sign up successful!');
             } else {
-                console.log('Login unsuccessful!');
-                alert('Both Passwords must be the same!');
+                console.log('Passwords do not match!');
+                alert('Both passwords must be the same!');
             }
         }
     </script>
-    
 </body>
 </html>
