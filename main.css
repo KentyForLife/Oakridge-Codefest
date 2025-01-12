@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    
+    background-color: white;
+    padding: 10px 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-menu .dropdown {
+    position: relative;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    letter-spacing: 1px;
+    
+}
+
+.menu-item:hover {
+    color: #555;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-width: 150px;
+    
+    border: 1px solid #ddd;
+}
+.dropdown-content:hover {
+    color: #555;
+    cursor: pointer;
+}
+#Investing {
+    left: 80px;
+}
+#Simulator {
+    left: 20px;
+}
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+#ha{
+    display:none;
+    
+}
+#gmail:hover ~ #ha {
+    display:block;
+}
+#ah{
+    display:none;
+    
+}
+#Contact:hover ~ #ah {
+    display:block;
+}
+.text{
+    font-family:'Times New Roman';
+    font-size: 21px;
+}
+.idk{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center; 
+
+}
+.esp32{
+    max-width:350px;
+    border: 5px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    backdrop-filter: blur(5);
+}
+
+.motod{
+    max-width:350px;
+    border: 5px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    backdrop-filter: blur(5);
+}
+
+.dcm{
+    max-width:350px;
+    border: 5px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    backdrop-filter: blur(5);
+}
+
+.dcm {
+    display: inline-block; 
+    transition: transform 0.4s ease-in-out; 
+}
+
+.dcm:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.motod{
+    display: inline-block; 
+    transition: transform 0.4s ease-in-out; 
+}
+.motod:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.esp32{
+    display: inline-block; 
+    transition: transform 0.4s ease-in-out; 
+}
+.esp32:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+body{
+    background-image: url('maybe.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

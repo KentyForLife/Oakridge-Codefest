@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    
+    background-color: white;
+    padding: 10px 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-menu .dropdown {
+    position: relative;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.menu-item:hover {
+    color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-width: 150px;
+    
+    border: 1px solid #ddd;
+}
+#Investing {
+    left: 80px;
+}
+#Simulator {
+    left: 20px;
+}
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
