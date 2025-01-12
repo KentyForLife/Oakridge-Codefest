@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="center">
+      <div class="mainbox">
+        <h1 id="mainhead"><strong>Login</strong></h1>
+        <div class="credentials">
+          <i class="material-icons" id="mail">mail</i>
+          <input type="email" id="username" placeholder="Email" />
+          <i class="material-icons" id="lock">lock</i>
+          <input type="password" id="password" placeholder="Password" />
+          <button type="button" onclick="submitForm()" id="logins">
+            Login
+          </button>
+          <p id="registerbutton">
+            Don't have an account?
+            <a href="register.html" target="_blank" id="register"
+              ><strong>Register</strong></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function submitForm() {
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+
+
+          if (username && password) {
+              var storedUser = JSON.parse(localStorage.getItem(username));
+
+
+              if (storedUser && storedUser.password === password) {
+                  alert('Login successful!');
+              } else {
+                  alert('Invalid username or password.');
+              }
+          } else {
+              alert('Please fill in both fields.');
+          }
+      }
+  </script>
+  </body>
+</html>
